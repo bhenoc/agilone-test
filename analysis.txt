@@ -1,0 +1,32 @@
+/**
+ * Analysis for Interactive Graphing Demo
+ * by Henry Lubong
+ *
+ */
+ 
+ 
+This Interactive Graphing application is a programming test for Agilone. The main objective is to create an interactive web application where a user can plugin data on a table and create a simple graphical representation for it.
+
+My approach to this test is to build it on a simple web page to show off what HTML5, CSS3 and JavaScript can do to  produce a simple graph chart using canvas. The basic components in the page were the canvas itself and the table with an initial row for allowing the user to input the data for the x-axis and related y-axis values. Every rows in the table corresponds to a single chart on the graph. Multiple charts are supported by adding rows in the table. This is done through the "+ Add Row" button underneath the initial row. There is currently no set limit for the number of arrows that can be added. To create a graph, a user must press the "Create Graph" button located under the canvas. Every time a user presses this button, the whole canvas is repainted with the current data values from the table.
+
+The width and height of the canvas was set to 450px x 320px. You should also notice that the values from the table are proportionally laid out on the canvas. Lines on the graph will adjust accordingly depending on the values entered by the user. This was all done through some mathematical computations. Rounded dots are also added to visually represent the data points. There's also visible labels for the x-values.
+
+Although this graph was built for simplicity sake, it can be furthermore improved to be a fully functional interactive chart using the power of HTML5 canvas.
+
+Here's a list of future enhancements that can be added to this app:
+1. The line graph is currently set like a bar graph due to the limitation on the input values.
+   Inputs can be configured to accept real x/y values.
+
+2. Column can be expanded by adding another button at the end of the row.
+
+3. Labels on the graph are not very informative. The labels should be laid out in an interval
+   starting from 0 to the maximum value.
+   
+4. Labels can be added for y-axis.
+
+5. Canvas should be able to resize (auto or manual).
+
+6. Should be able to provide user settings through some kind of form allowing users to change colors, font-sizes,
+   canvas-size, etc.
+   
+7. Program is currently not implemented as being extendable. It can be refactored that way.
