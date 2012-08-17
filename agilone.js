@@ -3,6 +3,10 @@
  * @abstract: Interactive Graphing for Agilone
  * @author: Henry Lubong
  *
+ *
+ * You will notice that jQuery was used for this application only
+ * for DOM traversal/manipulations
+ *
  */
 
 var AGILONE = AGILONE || {};
