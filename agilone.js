@@ -104,7 +104,7 @@ AGILONE.intgraph = (function() {
           
           ctx.beginPath();
           ctx.lineWidth = 3;
-          ctx.strokeStyle = graphColors[i];
+          ctx.strokeStyle = graphColors[j];
           ctx.moveTo(realX + k, lineGraphHeight - yOffset);
           ctx.lineTo(realX + k, realY);
           ctx.stroke();
