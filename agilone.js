@@ -32,7 +32,7 @@ AGILONE.intgraph = (function() {
     	//event listeners
       $('#btn-add-row').bind('click', this.addNewRow);
       $('#btn-refresh-graph').bind('click', {obj: this}, this.refreshGraph);
-
+      $(lineGraph).bind('mouseover', {obj: this}, this.refreshGraph);
     },
 
 		addNewRow: function(event) {
