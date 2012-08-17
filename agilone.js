@@ -97,20 +97,25 @@ AGILONE.intgraph = (function() {
         /*
           begin drawing the lines and data points
         */
+        var k = 0;
+        
         for (j = 0; j < colLength; j++) {
           var realY = this.getRealY(this.data[i][j].y);
           
           ctx.beginPath();
           ctx.lineWidth = 3;
           ctx.strokeStyle = graphColors[i];
-          ctx.moveTo(realX, lineGraphHeight - yOffset);
-          ctx.lineTo(realX, realY);
+          ctx.moveTo(realX + k, lineGraphHeight - yOffset);
+          ctx.lineTo(realX + k, realY);
           ctx.stroke();
 
-          ctx.beginPath();
+          /*ctx.beginPath();
           ctx.fillStyle = graphColors[i];
           ctx.arc(realX, realY, 4, 0, Math.PI * 2, true);
           ctx.fill();
+          */
+          
+          k = k + 10;
         }    
       }    
 		},
